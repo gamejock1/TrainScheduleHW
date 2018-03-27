@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>Train Schedule</h1>
+    </div>
+
+    <div id="tableContainer" class="panel panel-primary">
+        <div class="panel-heading">Employees</div>
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Date</th>
+                <th>Worked</th>
+                <th>Rate ($)</th>
+                <th>Billed ($)</th>
+            </tr>
+            <tr>
+                <td>Test User</td>
+                <td>Spy</td>
+                <td>3/24/2018</td>
+                <td>30</td>
+                <td>10000</td>
+                <td>240000</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="web-form">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Submit Info</div>
+              <div class="panel-body">
+                <form>
+        
+                  <div class="form-group">
+                    <label for="trainName">Train Name</label>
+                    <input type="text" class="form-control" id="trainName" placeholder="Trenton Express">
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination" placeholder="Trenton">
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="trainTime">First Train Time (HH:mm - military time)</label>
+                    <input type="text" class="form-control" id="trainTime" placeholder="1300">
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="frequency">Frequency (min)</label>
+                    <input type="text" class="form-control" id="frequency" placeholder="35">
+                  </div>
+        
+                  <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        
+                  </form>
+              </div>
+            </div>
+    </div>
+
+
+</body>
+
+</html>
