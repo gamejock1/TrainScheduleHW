@@ -1,3 +1,3 @@
 # TrainScheduleHW
 
-This application takes user input to pull train schedule information from an API and display it in a table.
+This application takes user input, pushes to Firebase, generates the times for the trains, then displays it in a table.
